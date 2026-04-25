@@ -1,0 +1,25 @@
+services:
+  backend:
+    build:
+      context: ./web
+    container_name: vuln-camp-backend
+    ports:
+      - "8080:8080"
+    volumes:
+      - backend-uploads:/app/uploads
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: vuln-camp-frontend
+    depends_on:
+      - backend
+    ports:
+      - "3001:3001"
+    environment:
+      - NEXT_TELEMETRY_DISABLED=1
+    restart: unless-stopped
+
+volumes:
+  backend-uploads:

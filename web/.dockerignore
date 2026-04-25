@@ -1,0 +1,6 @@
+target
+.mvn
+uploads
+data
+*.log
+*.err.log

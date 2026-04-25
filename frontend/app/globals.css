@@ -1,0 +1,9 @@
+/* Global styles are handled by Mantine */
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+.group:hover .group-hover\:opacity-100 {
+    opacity: 1 !important;
+}
