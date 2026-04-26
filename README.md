@@ -276,14 +276,6 @@ document.cookie = 'VULN_USER=test@test.com; path=/'
 
 ---
 
-## 관련 문서
-
-- [취약점 분석 가이드](./취약점.md)
-- [코드 구조 소개](./코드소개.md)
-- [취약점별 상세 문서](./vulnerabilities)
-- `보고서.docx` - Vuln-Camp 웹 애플리케이션 모의해킹 결과 보고서
-
----
 
 ## 주의사항
 
